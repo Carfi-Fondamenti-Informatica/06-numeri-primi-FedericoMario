@@ -2,15 +2,20 @@
 #include "lib.h"
 
 using namespace std;
+
 int main(){
-    int n=0; cin>>n;
-    int m=(n-1);
-    if (primo(n,m)==true);{
+    int n;
+    int i;
+    bool ris;
+    cin>>n;
+    i=n-1;
+    ris=num_prim(n,i);
+    if (ris==1)
+    {
         cout<<"numero primo";
-    } else if (primo(n,m)==false){
-        cout<<"numero non primo";
     }
+    else{
+        cout<<"numero non primo";
+        }
     return 0;
 }
-
-
