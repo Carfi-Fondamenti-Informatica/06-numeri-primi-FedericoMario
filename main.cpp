@@ -7,9 +7,9 @@ int main(){
     cin>>n;
     int m=(n-1);
     if (primo(n,m)==true);{
-        cout<<"numero primo";
+        cout<<"numero primo"<<endl;
     } else if (primo(n,m)==false){
-        cout<<"numero non primo";
+        cout<<"numero non primo"<<endl;
     }
     return 0;
 }
