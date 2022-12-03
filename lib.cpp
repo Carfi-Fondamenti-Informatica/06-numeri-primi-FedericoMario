@@ -1,15 +1,11 @@
-#include "lib.h"
-int primo (int n, int m){
-    bool x=true;
-    if (m!= 1){
-        if ((n%m)!=0){
-            m--;
-            x=primo(n, m);
-        } else {
-            x= false;
-        }
-    }else{
-        x= true;
-      }
-    return x;
+bool num_prim(int n, int i)
+{
+    int r;
+    if (i<2)
+        return true;
+    r = n%i;
+    if (r==0)
+        return false;
+    else
+        r=num_prim(n,i-1);
 }
