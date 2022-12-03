@@ -3,13 +3,13 @@
 
 using namespace std;
 int main(){
-    int a=0;
-    cin>>a;
-    if (numprimi(a)==0) {
-        cout<<"numero primo"<<endl;
-    }
-    else {
-        cout<<"numero non primo"<<endl;
+    int n=0;
+    cin>>n;
+    int m=(n-1);
+    if (primo(n,m)==true);{
+        cout<<"numero primo";
+    } else if (primo(n,m)==false){
+        cout<<"numero non primo";
     }
     return 0;
 }
